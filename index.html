@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>liquid</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="root">
+        <canvas id="canvas1"></canvas>
+        <div class="container">
+            <div class="content">
+                <nav>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </nav>
+                <section class="mainBlock">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio autem tempora laborum sed nulla odit soluta molestias obcaecati dignissimos minima eos ipsam numquam vero, esse laudantium quo odio dolore ullam!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste excepturi, numquam vero nisi natus voluptas atque perspiciatis asperiores, inventore voluptatibus unde rem aperiam modi, ullam sed quae facere aspernatur error!</p>
+                    </div>
+                    <section class="topBlock">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto saepe earum alias! Laudantium veniam sed, ex accusantium harum, rem voluptas minus suscipit debitis maxime quidem aliquam voluptate. Mollitia, officiis totam.</p>
+                    </section>
+                    <section class="bottomBlock">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel doloremque ad voluptates maxime nam atque corrupti, voluptas placeat magnam, laudantium culpa illo. Sequi quae numquam quis quos eveniet assumenda?</p>
+                    </section>
+                </section>
+            </div>
+        </div>
+<svg>
+    <defs>
+        <filter id="goo">
+            <feGaussianBlur in="sourceGraphic"
+                            stdDeviation="10"
+                            result="blur" />
+            <feColorMatrix in="blur" 
+                            mode="matrix"
+                            values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 19 -9"
+                            result="goo" 
+            />
+            <feComposite in="sourceGraphic" in2="goo"
+                        operator="atop" 
+            />
+        </filter>
+    </defs>
+</svg>
+        <script src="index.js"></script>
+    </body>
+</html>
